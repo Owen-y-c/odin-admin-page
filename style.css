@@ -31,6 +31,27 @@ input, button, textarea, select {
   border: 1px solid black;
 }
 
+.icon-medium{
+  background-color: aqua;
+  height: 1.5rem;
+  width: 1.5rem;
+  border: 1px solid black;
+}
+
+.top-nav{
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 0.5rem;
+}
+
+.inline-ul{
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: space-evenly;
+}
+
+/*
 .inline-ul li{
   display: inline-block;
 }
@@ -49,4 +70,4 @@ section a, div, p{
 }
 .btn-project-control:hover{
   color: aqua;
-}
+} */
