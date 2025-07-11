@@ -1,0 +1,52 @@
+/* === RESET & BASE === */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  border: 0.5px solid rgba(188, 69, 69, 0.431);
+}
+
+body {
+  line-height: 1.5;
+  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: large;
+  color: rgb(69, 69, 69);
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+.icon-large{
+  background-color: aqua;
+  height: 2.5rem;
+  width: 2.5rem;
+  border: 1px solid black;
+}
+
+.inline-ul li{
+  display: inline-block;
+}
+
+header section{
+  display: inline-block;
+}
+
+section a, div, p{
+  display: inline-block;
+}
+
+.btn-project-control{
+  border: 0;
+  background-color: white;
+}
+.btn-project-control:hover{
+  color: aqua;
+}
