@@ -24,50 +24,94 @@ input, button, textarea, select {
   font: inherit;
 }
 
-.icon-large{
-  background-color: aqua;
-  height: 2.5rem;
-  width: 2.5rem;
-  border: 1px solid black;
+ul{
+  list-style: none;
 }
 
-.icon-medium{
-  background-color: aqua;
-  height: 1.5rem;
-  width: 1.5rem;
-  border: 1px solid black;
+/*===coloring sections===*/
+.page-wrapper{
+  background-color: rgba(127, 255, 212, 0.348);
 }
 
 .top-nav{
+  background-color: rgba(0, 0, 255, 0.286);
+}
+
+.side-nav{
+  background-color: rgba(137, 43, 226, 0.502);
+}
+
+.content-main{
+  background-color: aqua;
+}
+
+.content-side{
+  background-color: burlywood;
+}
+
+/*=== starting from top nav ===*/
+.top-nav{
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
-  gap: 0.5rem;
 }
 
-.inline-ul{
-  display: flex;
-  flex-direction: row;
-  list-style: none;
-  justify-content: space-evenly;
+/*=== Icon settings===*/
+/*icon size*/
+.icon-medium{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 3rem 3rem;
+  height: 3rem;
+  width: 3rem;
 }
 
-/*
-.inline-ul li{
-  display: inline-block;
+.icon-small{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 1.25rem 1.25rem;
+  height: 1.25rem;
+  width: 1.25rem;
 }
-
-header section{
-  display: inline-block;
+/*specific icons*/
+.icon-notification{
+  background-image: url(media/bell-badge.svg);
 }
-
-section a, div, p{
-  display: inline-block;
+.icon-user{
+  background-image: url(media/account-circle.svg);
 }
-
-.btn-project-control{
-  border: 0;
-  background-color: white;
+.icon-search{
+  background-image: url(media/magnify.svg);
 }
-.btn-project-control:hover{
-  color: aqua;
-} */
+.icon-manage{
+  background-image: url(media/sitemap.svg);
+}
+.icon-home{
+  background-image: url(media/home.svg);
+}
+.icon-profile-settings{
+  background-image: url(media/account-search.svg);
+}
+.icon-messages{
+  background-image: url(media/message.svg);
+}
+.icon-tasks{
+  background-image: url(media/clipboard-check.svg);
+}
+.icon-settings{
+  background-image: url(media/cog.svg);
+}
+.icon-support{
+  background-image: url(media/headset.svg);
+}
+.icon-privacy{
+  background-image: url(media/shield-account.svg);
+}
+.icon-star{
+  background-image: url(media/star.svg);
+}
+.icon-eye{
+  background-image: url(media/eye.svg);
+}
+.icon-share{
+  background-image: url(media/share-variant.svg);
+}
