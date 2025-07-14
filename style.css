@@ -4,14 +4,15 @@
 }
 
 * {
+  padding: 0;
   margin: 0;
   border: 0.5px solid rgba(188, 69, 69, 0.431);
+  /* font-size: 20px; */
 }
 
 body {
   line-height: 1.5;
   font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: large;
   color: rgb(69, 69, 69);
 }
 
@@ -28,50 +29,123 @@ ul{
   list-style: none;
 }
 
+
+
 /*===coloring sections===*/
 .page-wrapper{
   background-color: rgba(127, 255, 212, 0.348);
 }
-
 .top-nav{
   background-color: rgba(0, 0, 255, 0.286);
 }
-
 .side-nav{
   background-color: rgba(137, 43, 226, 0.502);
 }
-
-.content-main{
+.user-projects{
   background-color: aqua;
 }
-
 .content-side{
   background-color: burlywood;
 }
 
-/*=== starting from top nav ===*/
-.top-nav{
+
+
+/*=== main grid ===*/
+.page-wrapper{
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
+  gap: 10px;
+  grid-template-columns: 120px;
 }
+
+
+
+/*=== top nav ===*/
+.top-nav{
+  grid-area: 1 / 2 / 2 / 4;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+.user-actions{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.inline-ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+.btn-project-control{
+  border-radius: 5px;
+}
+.btn-project-control:hover{
+  background-color: aqua;
+  cursor: pointer;
+}
+.btn-project-control:active{
+  background-color: aquamarine;
+}
+.search{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search-form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.user-info{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.account{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 15px;
+}
+
+
+
+/*=== creating a side bar ===*/
+.side-nav{
+  grid-area: 1 / 1 / 4 / 2;
+  padding-top: 15px;
+  height: max(100%, 100vh);
+}
+
+
+/*=== main content section ===*/
+.content-main{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 10px;
+}
+
 
 /*=== Icon settings===*/
 /*icon size*/
 .icon-medium{
+  background-color: transparent;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 3rem 3rem;
-  height: 3rem;
-  width: 3rem;
+  background-size: 2rem 2rem;
+  height: 2rem;
+  width: 2rem;
 }
-
 .icon-small{
   background-position: center;
   background-repeat: no-repeat;
+  background-color: transparent;
   background-size: 1.25rem 1.25rem;
   height: 1.25rem;
   width: 1.25rem;
 }
+
 /*specific icons*/
 .icon-notification{
   background-image: url(media/bell-badge.svg);
