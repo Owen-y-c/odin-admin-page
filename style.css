@@ -6,14 +6,14 @@
 * {
   padding: 0;
   margin: 0;
-  border: 0.5px solid rgba(188, 69, 69, 0.431);
+  /* border: 0.5px solid rgba(188, 69, 69, 0.431); */
   /* font-size: 20px; */
 }
 
 body {
   line-height: 1.5;
   font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  color: rgb(69, 69, 69);
+  background-color: rgb(245, 245, 245);
 }
 
 img, picture, video, canvas, svg {
@@ -65,24 +65,24 @@ ul{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   margin-right: 10px;
+  background-color: white;
+  padding: 15px;
+  border-radius: 15px;
+  margin-top: 5px;
 }
 .user-actions{
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
-}
-.inline-ul{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 0;
+  width: 200px;
 }
 .btn-project-control{
   border-radius: 5px;
+  border: none;
+  padding: 5px;
 }
 .btn-project-control:hover{
-  background-color: aqua;
+  background-color: rgb(182, 182, 182);
   cursor: pointer;
 }
 .btn-project-control:active{
@@ -119,6 +119,10 @@ ul{
   grid-template-rows: max-content;
   gap: 20px;
 }
+.announcement-contianer{
+  background-color: white;
+  border-radius: 5px;
+}
 .announcements{
   display: grid;
   gap: 10px;
@@ -131,6 +135,8 @@ ul{
   display: flex;
   padding: 10px;
   gap: 5px;
+  background-color: white;
+  border-radius: 5px;
 }
 .source-img{
   height: 50px;
@@ -145,6 +151,14 @@ ul{
   grid-area: 1 / 1 / 4 / 2;
   padding-top: 15px;
   height: max(100%, 100vh);
+  background-color: #5c9bfa;
+  color: black;
+}
+.side-nav a{
+  color: black;
+}
+.side-nav a::after{
+  color: black;
 }
 
 
@@ -170,6 +184,7 @@ ul{
   height: 100%;
   border-radius: 10px;
   padding: 10px;
+  background-color: white;
 }
 .card-title{
   font-weight: bold;
@@ -200,6 +215,7 @@ ul{
   background-size: 2rem 2rem;
   height: 2rem;
   width: 2rem;
+  border: none;
 }
 .icon-small{
   background-position: center;
@@ -208,6 +224,7 @@ ul{
   background-size: 1.25rem 1.25rem;
   height: 1.25rem;
   width: 1.25rem;
+  border: none;
 }
 
 /*specific icons*/
