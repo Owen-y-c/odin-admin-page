@@ -112,6 +112,34 @@ ul{
 
 
 
+/*=== side contnt===*/
+.content-side{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: max-content;
+  gap: 20px;
+}
+.announcements{
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr;
+}
+.announcement-text{
+  margin: 10px;
+}
+.source-card-content{
+  display: flex;
+  padding: 10px;
+  gap: 5px;
+}
+.source-img{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+
+
 /*=== creating a side bar ===*/
 .side-nav{
   grid-area: 1 / 1 / 4 / 2;
@@ -130,7 +158,7 @@ ul{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-auto-rows: max-content;
-  gap: 10px;
+  gap: 20px;
 }
 .user-projects-title{
   grid-column: 1 / -1;
@@ -140,12 +168,15 @@ ul{
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
+  border-radius: 10px;
+  padding: 10px;
 }
 .card-title{
   font-weight: bold;
 }
 .card-description{
   flex-grow: 1;
+
 }
 .card-footer{
   display: flex;
@@ -157,6 +188,7 @@ ul{
   align-self: flex-end;
   gap: 10px;
 }
+
 
 
 /*=== Icon settings===*/
